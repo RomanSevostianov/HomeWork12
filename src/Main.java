@@ -1,15 +1,13 @@
 public class Main {
 
-
     public static void main(String[] args) {
 
-        Book bookOne = new Book ("Roman", "Volcov");
-        Book bookTwo = new Book("Anna", "Volcova");
-        Book bookThree = new  Book("Anna", "Volcova");
-        System.out.println(bookOne.getName() + "  " + bookOne.getSurname());
+        Book bookOne = new Book ("Roman s kamnem", "Volcov",1985);
+        Book bookTwo = new Book ("Terminator", "Morozov",1996);
 
-        bookOne.setName("Сергей");
-        System.out.println(bookOne.getName());
+        Author authorOne = new Author("Ropp", "Serji");
+        bookOne.setYearPublication(2000);
+        System.out.println(bookOne.getYearPublication());
     }
 
 }

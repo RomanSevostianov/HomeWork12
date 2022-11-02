@@ -1,23 +1,27 @@
 import javax.management.loading.PrivateMLet;
 
 public class Book {
-    private String surname;
-    private String name;
-
-    public Book(String name2, String surname2) {
-        this.name = name2;
-        this.surname = surname2;
+    private String nameBook;
+    private String nameAuthor;
+    private int yearPublication;
+    //_________________________________________
+    public Book(String nameBook, String nameAuthor, int yearPublication) {
+        this.nameBook = nameBook;
+        this.nameAuthor = nameAuthor;
+        this.yearPublication = yearPublication;
     }
-
-    public String getName() {
-        return this.name;
+    // ___________________________________________
+    public String getNameBook() {
+        return this.nameBook;
     }
-    public String getSurname(){
-        return  this.surname;
+    public String getNameAuthor() {
+        return this.nameAuthor;
     }
-
-    public  void  setName (String name) {
-        this.name=name;
+    public  int getYearPublication(){
+        return this.yearPublication;
+    }
+    public void setYearPublication(int yearPublication) {
+        this.yearPublication = yearPublication;
     }
 }
 
